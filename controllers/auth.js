@@ -4,7 +4,7 @@ const OAuth2 = google.auth.OAuth2;
 // Vous devez définir ces variables d'environnement dans votre système ou fichier .env
 const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
 const CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
-const REDIRECT_URL = 'http://localhost:5000/auth/google/callback';
+const REDIRECT_URL = 'https://cynthia.adaptable.app/auth/google/callback';
 
 const oauth2Client = new OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
 
