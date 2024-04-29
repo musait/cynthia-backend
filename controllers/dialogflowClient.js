@@ -3,8 +3,8 @@ const sessionClient = new dialogflow.SessionsClient({
     keyFilename: "cynthia-cgvb-62a75780f7da.json"
 });
 
-const sessionId = '107044742146902625315'; // Généralement un identifiant unique pour chaque utilisateur
-const sessionPath = sessionClient.sessionPath('cynthia-cgvb', sessionId);
+const sessionId = process.env.DIALOGFLOW_SESSION_ID; // Généralement un identifiant unique pour chaque utilisateur
+const sessionPath = sessionClient.sessionPath(process.env.DIALOGFLOW_PROJECT_ID, sessionId);
 
 // Fonction pour envoyer une requête texte à Dialogflow
 async function sendToDialogflow(text) {
