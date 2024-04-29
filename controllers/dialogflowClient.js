@@ -1,5 +1,5 @@
 const dialogflow = require('dialogflow');
-const projectId = "cynthia-cgvb"
+const projectId = process.env.DIALOGFLOW_PROJECT_ID
 const credentials = {
     client_email: process.env.DIALOGFLOW_CLIENT_EMAIL,
     private_key: process.env.DIALOGFLOW_PRIVATE_KEY,

@@ -11,7 +11,7 @@ const indexRoutes = require('./routes/index');
 const oauthRoutes = require('./routes/auth');
 const calendarRoutes = require('./routes/calendarRoutes');
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://aitmus06:ikrljZU8quG9AQJw@cynthia.hzoqnek.mongodb.net/?retryWrites=true&w=majority&appName=Cynthia";
+const uri = "mongodb+srv://cynthia-main-db-0c5c1b5a673:Jm5fRTZbqHbE3PKYgRGGaa7D29qyAm@prod-us-central1-3.yr9so.mongodb.net/cynthia-main-db-0c5c1b5a673";
 
 
 app.use(express.json());
